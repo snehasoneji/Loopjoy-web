@@ -1635,16 +1635,13 @@ p {
   scroll-snap-type: x mandatory;
   gap: 16px;
   padding: 40px 16px 70px;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
   background: none;
   margin: 0;
 }
 
 .idea-grid-desktop .idea-card {
   flex: 0 0 auto;
-  scroll-snap-align: start;
-  
+
 }
 
   .idea-grid-desktop .loop-card-bg {
@@ -1867,4 +1864,3 @@ p.copyright {
 }
 
 }
-
