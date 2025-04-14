@@ -369,26 +369,39 @@ p {
 @media (max-width: 992px) {
   .header-main {
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
+    align-items: center; 
+    flex-wrap: nowrap; 
   }
 
   .header-left {
-    flex: 1;
+    flex: 0 0 auto;
   }
 
   .header-center {
-    order: 3;
-    width: 100%;
+    order: 2; 
+    width: auto; 
+    flex: 1; 
+    display: flex;
     justify-content: center;
   }
 
+  .header-center nav {
+    display: flex;
+    gap: 15px;
+  }
+
+
+  
   .header-right {
-    flex: 1;
-    text-align: right;
+    flex: 0 0 auto; 
+    order: 3;
   }
 
   .header-right .btn {
     min-width: unset;
+    padding: 8px 15px; 
+    white-space: nowrap; 
   }
 
   h1 {
@@ -416,7 +429,7 @@ p {
 
   .feature {
     margin: 0 5px;
-  }
+  } 
 }
 
 @media (max-width: 768px) {
@@ -480,9 +493,10 @@ p {
     cursor: pointer;
   }
 
-  .header-main {
+ .header-main {
     position: relative;
-  }
+    justify-content: space-between;
+}
 
   .header-center {
     display: none;
@@ -1620,17 +1634,18 @@ p {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: 16px;
-  padding: 40px 0px 70px;
+  padding: 40px 16px 70px;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   background: none;
   margin: 0;
 }
 
-  .idea-grid-desktop .idea-card {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-  }
+.idea-grid-desktop .idea-card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  
+}
 
   .idea-grid-desktop .loop-card-bg {
     display: none;
@@ -1852,15 +1867,4 @@ p.copyright {
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
