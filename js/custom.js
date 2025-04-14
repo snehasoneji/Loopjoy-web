@@ -50,39 +50,80 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// window.addEventListener('load', function () {
+//   const carousel = document.querySelector('.idea-grid-desktop');
+
+//   if (window.innerWidth <= 768 && carousel) {
+//     let scrollDirection = 1;
+//     const speed = 1.5; 
+//     let lastTime = null;
+
+//     function autoScroll(time) {
+//       if (lastTime === null) lastTime = time;
+//       const delta = time - lastTime;
+//       lastTime = time;
+
+//       carousel.scrollLeft += scrollDirection * speed * (delta / 16.67);
+
+      
+//       if (carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth - 1) {
+//         scrollDirection = -1;
+//       } else if (carousel.scrollLeft <= 1) {
+//         scrollDirection = 1;
+//       }
+
+//       requestAnimationFrame(autoScroll);
+//     }
+
+//     requestAnimationFrame(autoScroll);
+//   }
+// });
+
+
+function waitForImages(callback) {
+  const images = document.querySelectorAll('.idea-card img');
+  let loadedCount = 0;
+
+  images.forEach(img => {
+    if (img.complete) {
+      loadedCount++;
+    } else {
+      img.addEventListener('load', () => {
+        loadedCount++;
+        if (loadedCount === images.length) callback();
+      });
+    }
+  });
+
+  if (loadedCount === images.length) callback();
+}
+
 window.addEventListener('load', function () {
   const carousel = document.querySelector('.idea-grid-desktop');
 
   if (window.innerWidth <= 768 && carousel) {
-    let scrollDirection = 1;
-    const speed = 1.5; // Adjust for faster/slower auto-scroll
-    let lastTime = null;
+    waitForImages(() => {
+      let scrollDirection = 1;
+      const speed = 1.5;
+      let lastTime = null;
 
-    function autoScroll(time) {
-      if (lastTime === null) lastTime = time;
-      const delta = time - lastTime;
-      lastTime = time;
+      function autoScroll(time) {
+        if (lastTime === null) lastTime = time;
+        const delta = time - lastTime;
+        lastTime = time;
 
-      carousel.scrollLeft += scrollDirection * speed * (delta / 16.67);
+        carousel.scrollLeft += scrollDirection * speed * (delta / 16.67);
 
-      // Reverse direction at edges
-      if (carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth - 1) {
-        scrollDirection = -1;
-      } else if (carousel.scrollLeft <= 1) {
-        scrollDirection = 1;
+        if (carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth - 1) {
+          scrollDirection = -1;
+        } else if (carousel.scrollLeft <= 1) {
+          scrollDirection = 1;
+        }
+
+        requestAnimationFrame(autoScroll);
       }
 
       requestAnimationFrame(autoScroll);
-    }
-
-    requestAnimationFrame(autoScroll);
+    });
   }
 });
-
-
-
-
-
-
-
-
