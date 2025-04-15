@@ -835,12 +835,12 @@ p {
 
 .card-section h6 {
   color: #635BFF;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 14px;
   line-height: 150%;
   margin-bottom: 21px;
   font-family: "Plus Jakarta Sans", sans-serif;
-
+  letter-spacing: 2px;
 }
 
 .card-section h4 {
@@ -936,11 +936,12 @@ p {
 
 .Back-section h6 {
   color: #635BFF;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 14px;
   line-height: 150%;
   margin-bottom: 21px;
   font-family: "Plus Jakarta Sans", sans-serif;
+  letter-spacing: 2px;
 }
 
 .Back-section h4 {
@@ -1202,7 +1203,7 @@ p {
 
 .loop-section h6 {
   color: #635BFF;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 15px;
   line-height: 150%;
   margin-bottom: 15px;
@@ -1308,7 +1309,7 @@ p {
 
   .loop-section h6 {
     color: #635BFF;
-    font-weight: 600;
+    font-weight: 900;
     font-size: 12px;
     line-height: 150%;
     margin-bottom: 15px;
@@ -1335,11 +1336,12 @@ p {
 
 .hear-left h6 {
   color: #635BFF;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 14px;
   line-height: 150%;
   margin-bottom: 7px;
   font-family: "Plus Jakarta Sans", sans-serif;
+  letter-spacing: 2px;
 }
 
 .hear-left h4 {
@@ -1525,11 +1527,12 @@ p {
 
 .cele-section h6 {
   color: #635BFF;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 14px;
   line-height: 150%;
   margin-bottom: 21px;
   font-family: "Plus Jakarta Sans", sans-serif;
+  letter-spacing: 2px;
 }
 
 .cele-section h4 {
@@ -1663,10 +1666,11 @@ p {
 
 .forward-section h6 {
   color: #635BFF;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 14px;
   line-height: 150%;
   margin: 0 0 7px 0;
+  letter-spacing: 2px;
 }
 
 .forward-section h4 {
@@ -1782,10 +1786,11 @@ p {
 
 .idea-section h6 {
   color: #635BFF;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 14px;
   line-height: 150%;
   margin: 0 0 7px 0;
+  letter-spacing: 2px;
 }
 
 .idea-section h4 {
