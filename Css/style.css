@@ -707,15 +707,15 @@ p {
     height: 80px;
     justify-content: space-evenly;
 }
+.card-left img {
+  border-radius: 38px;
+  width: 70px;
+}
   
-  .card-left img {
-    border-radius: 38px;
-    width: auto;
-  }
-  
-  .card-left-2 {
-    padding: 10px 0 10px 0;
-  }
+.card-left-2 {
+  padding: 10px 0 10px 0;
+  width: 220px;
+}
   
   .card-left-2 h5 {
     font-size: x-small;
@@ -740,15 +740,15 @@ p {
 
 .card-header-right {
   padding: 5px;
-  margin: 0 0 0 15px;
+  margin: 0 0 0 3px;
 }
   
 .card-header-right a {
   font-size: 7px;
   text-decoration: none;
   border: 1px solid rgba(43, 41, 41, 0.25);
-  border-radius: 10px;
-  padding: 5px 8px;
+  border-radius: 5px;
+  padding: 5px 5px;
   color: rgb(26 18 18 / 59%);
   transition: all 0.3s ease;
   display: inline-block;
