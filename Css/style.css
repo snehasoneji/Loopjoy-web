@@ -815,6 +815,7 @@ p {
   background-color: #e6f0ff;
 }
 
+
 @media (max-width: 768px) {
   .slider-container {
     padding: 100px 0 100px 0;
@@ -889,7 +890,7 @@ p {
     letter-spacing: 2px;
     font-weight: 900;
     margin: 0 4px 21px;
-}
+  }
 
   .card-section .lead p {
     font-size: 15px;
@@ -1033,7 +1034,7 @@ p {
 }
 
 .folder-card {
-  margin: 0 0 24px 0; 
+  margin: 0 0 24px 0;
   flex: 0 0 auto;
   scroll-snap-align: center;
   margin: 0;
@@ -1172,7 +1173,7 @@ p {
     cursor: pointer;
   }
 
-  
+
   .folder-section .container::before,
   .folder-section .container::after {
     display: none;
@@ -2111,12 +2112,12 @@ p.copyright {
 
 .footer-btn a {
   color: black;
-  text-decoration: none; 
-  transition: color 0.3s ease; 
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .footer-btn a:hover {
-  color: rgb(26, 129, 194); 
+  color: rgb(26, 129, 194);
 }
 
 
@@ -2172,21 +2173,21 @@ p.copyright {
   .footer-icon img {
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
-  
+
   .footer-icon img:hover {
     transform: scale(1.1);
     opacity: 0.8;
-  
+
   }
-  
+
   .footer-btn a {
     color: black;
-    text-decoration: none; 
-    transition: color 0.3s ease; 
+    text-decoration: none;
+    transition: color 0.3s ease;
   }
-  
+
   .footer-btn a:hover {
-    color: rgb(26, 129, 194); 
+    color: rgb(26, 129, 194);
   }
 
 }
