@@ -885,10 +885,10 @@ p {
   }
 
   .card-section h6 {
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 2px;
     font-weight: 900;
-    margin: 0 11px 21px;
+    margin: 0 4px 21px;
 }
 
   .card-section .lead p {
@@ -922,9 +922,10 @@ p {
   }
 
   .card-section h6 {
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 2px;
     font-weight: 900;
+    margin: 0 3px 21px;
   }
 }
 
