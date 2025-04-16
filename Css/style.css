@@ -527,11 +527,19 @@ p {
   }
 
   .features {
-    gap: 15px;
+    gap: 10px;
   }
 
   .feature {
     margin: 0 5px;
+  }
+
+  .feature-p p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  
   }
 
 }
@@ -549,6 +557,8 @@ p {
   .features {
     flex-direction: column;
     align-items: center;
+    gap: 10px;
+  
   }
 
   .feature {
@@ -564,6 +574,14 @@ p {
   .btn-2 {
     width: 100%;
     max-width: 250px;
+  }
+
+  .feature-p p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  
   }
 }
 
