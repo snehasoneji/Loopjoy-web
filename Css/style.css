@@ -124,9 +124,6 @@ p {
     font-size: 20px;
   }
 
-  .tagline p {
-    font-size: 20px;
-  }
 }
 
 
@@ -239,7 +236,7 @@ p {
   padding: 9px;
   border-radius: 5px;
   font-size: 15px;
- 
+
 }
 
 .mobile-menu ul {
@@ -315,6 +312,7 @@ p {
   h4 {
     font-size: 32px;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -402,7 +400,8 @@ p {
 
   .header-right-btn .btn {
     font-size: 11px;
-}
+  }
+
 }
 
 
@@ -464,7 +463,7 @@ p {
 
 .feature {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   margin: 0 10px;
 }
 
@@ -527,11 +526,12 @@ p {
   }
 
   .features {
-    gap: 10px;
+    gap: 5px;
   }
 
   .feature {
-    margin: 0 5px;
+    margin: 5px 0;
+    align-items: baseline;
   }
 
   .feature-p p {
@@ -539,12 +539,17 @@ p {
     font-size: 14px;
     font-weight: 600;
     font-family: "Plus Jakarta Sans", sans-serif;
-  
+
+  }
+
+  .tagline p {
+    font-size: 20px;
   }
 
 }
 
 @media (max-width: 768px) {
+
   p,
   .tagline p {
     font-size: 18px;
@@ -557,12 +562,12 @@ p {
   .features {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-  
+    gap: 5px;
   }
 
   .feature {
     margin: 5px 0;
+    align-items: baseline;
   }
 
   .gift-btn {
@@ -581,8 +586,24 @@ p {
     font-size: 14px;
     font-weight: 600;
     font-family: "Plus Jakarta Sans", sans-serif;
-  
+
   }
+
+  .btn-1 .btn {
+    padding: 11px 65px;
+    font-size: 16px;
+  }
+
+  .btn-2 .btn {
+    padding: 11px 65px;
+    font-size: 16px;
+  }
+
+  .tagline {
+    margin: 33px 0 33px auto;
+    max-width: 900px;
+  }
+
 }
 
 
@@ -780,7 +801,7 @@ p {
 
   .card-header-right {
     padding: 0;
-    margin: 0 0 0 10px;
+    margin: 0 0 0 0;
   }
 
   .card-header-right a {
@@ -887,6 +908,7 @@ p {
   margin: 1rem auto 2.5rem;
   font-size: 18px;
   line-height: 150%;
+  color: #666;
 
 }
 
@@ -919,6 +941,7 @@ p {
   .card-section .lead p {
     font-size: 15px;
     line-height: 140%;
+    color: #666;
   }
 }
 
@@ -934,6 +957,7 @@ p {
   .card-section .lead p {
     font-size: 15px;
     margin: 0px 23px 19px;
+    color: #666;
   }
 
   .card-btn .btn-3 {
@@ -989,6 +1013,7 @@ p {
   margin: 1rem auto 2.5rem;
   font-size: 17px;
   line-height: 150%;
+  color: #666;
 
 }
 
@@ -1023,6 +1048,7 @@ p {
   .Back-section .lead p {
     font-size: 14px;
     line-height: 140%;
+    color: #666;
   }
 }
 
@@ -1039,6 +1065,7 @@ p {
     font-size: 15px;
     padding: 0;
     margin: 15px 0 0;
+    color: #666;
   }
 
   .Back-section h6 {
@@ -1377,9 +1404,9 @@ p {
 }
 
 .hear-left .lead p {
-  font-size: 18px;
-  margin: 0%;
-
+  padding: 0;
+  font-size: 15px;
+  color: #666;
 }
 
 .hear-left {
@@ -1460,6 +1487,7 @@ p {
   .hear-left .lead p {
     padding: 0;
     font-size: 15px;
+    color: #666;
   }
 
   .scroll-box {
@@ -1571,11 +1599,12 @@ p {
 }
 
 .cele-section .lead p {
-  color: #001D3D;
+  color: #666;
   max-width: 700px;
   margin: 1rem auto 2.5rem;
   font-size: 17px;
   line-height: 150%;
+
 
 }
 
@@ -1653,7 +1682,9 @@ p {
 
 
   .cele-section .lead p {
-    font-size: 16px;
+    font-size: 15px;
+    padding: 0 12px 0;
+    color: #666;
   }
 
   .cele-section h6 {
@@ -1915,10 +1946,11 @@ p {
   .idea-section h6 {
     color: #635BFF;
     font-weight: 900;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 150%;
     margin: 0 0 7px 0;
     letter-spacing: 2px;
+    padding: 0 14px 0;
   }
 
   .idea-section h4 {
@@ -2035,7 +2067,7 @@ p {
 
 @media screen and (max-width: 768px) {
   .joy-section {
-    padding: 40px 16px 133px 16px;
+    padding: 70px 16px 133px 16px;
   }
 
   .joy-section .container {
@@ -2075,7 +2107,7 @@ p {
     cursor: pointer;
     width: 100%;
     max-width: 300px;
-}
+  }
 
   .joy-img {
     position: relative;
