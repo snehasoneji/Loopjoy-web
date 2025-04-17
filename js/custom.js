@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
         left: box.offsetWidth * index,
         behavior: 'smooth'
       });
-    }, 1000); 
+    }, 1500); 
   }
 });
 
