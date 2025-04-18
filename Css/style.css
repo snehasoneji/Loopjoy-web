@@ -261,6 +261,11 @@ p {
   z-index: 1;
 }
 
+button.btn.desktop-menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
 
 
 @media (max-width: 992px) {
@@ -298,6 +303,11 @@ p {
     padding: 8px 15px;
     white-space: nowrap;
   }
+
+  .header-right-btn button.btn a {
+    text-decoration: none;
+    color: #fff;
+}
 
   h1 {
     font-size: 48px;
