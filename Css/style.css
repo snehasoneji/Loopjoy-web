@@ -671,7 +671,7 @@ button.btn.desktop-menu a {
     left: 25%;
     width: 50%;
     height: 400px;
-    background-image: url('/Img/blur-image.png');
+    background-image: url('../Img/blur-image.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
