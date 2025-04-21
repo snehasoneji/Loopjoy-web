@@ -97,36 +97,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   document.addEventListener('DOMContentLoaded', function() {
-    // Get all dots and carousel items
+   
     const dots = document.querySelectorAll('.dot');
     const items = document.querySelectorAll('.carousel-item');
     
-    // Add click event listener to each dot
+   
     dots.forEach(dot => {
         dot.addEventListener('click', function() {
             const index = this.getAttribute('data-index');
             
-            // Remove active class from all dots and items
+           
             dots.forEach(d => d.classList.remove('active'));
             items.forEach(item => item.classList.remove('active'));
             
-            // Add active class to current dot and item
+          
             this.classList.add('active');
             items[index].classList.add('active');
         });
     });
     
-    // Optional: Auto-rotate carousel every 5 seconds
+   
     let currentIndex = 0;
     setInterval(function() {
         currentIndex = (currentIndex + 1) % items.length;
         
-        // Remove active class from all dots and items
+       
         dots.forEach(d => d.classList.remove('active'));
         items.forEach(item => item.classList.remove('active'));
         
-        // Add active class to current dot and item
+       
         dots[currentIndex].classList.add('active');
         items[currentIndex].classList.add('active');
     }, 2000);
 });
+
+ 
