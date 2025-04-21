@@ -86,16 +86,24 @@ p {
   width: 100%;
   display: inline-block;
   border: none;
+  
 }
 
 .btn:hover {
   background-color: #0056b3;
   transform: scale(1.05);
+  color: #fff;
 }
 
 .btn:active {
   background-color: #004085;
   transform: scale(0.98);
+}
+
+button {
+  background: none;
+  border: none;
+  color: #fff;
 }
 
 @media (max-width: 1200px) {
@@ -211,13 +219,13 @@ p {
 .header-right .btn:hover {
   background-color: #0056b3;
   transform: scale(1.05);
-  color: #000;
+ 
 }
 
 .header-right .btn:active {
   background-color: #004085;
   transform: scale(0.98);
-  color: #000;
+
 }
 
 .burger-menu {
@@ -231,14 +239,13 @@ p {
   flex-direction: column;
   background: #ffffff;
   position: absolute;
-  top: 60px;
+  top: 50px;
   right: 10px;
-  width: 200px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 9px;
+  width: 130px;
+  box-shadow: 0 4px 6px #dee2e6;
+  padding: 5px;
   border-radius: 5px;
-  font-size: 15px;
-
+  font-size: 11px;
 }
 
 .mobile-menu ul {
@@ -259,6 +266,8 @@ p {
 .show-menu {
   display: flex;
   z-index: 1;
+  align-items: center;
+  text-align: center;
 }
 
 button.btn.desktop-menu a {
@@ -411,8 +420,10 @@ button.btn.desktop-menu a {
   }
 
   .header-right-btn .btn {
-    font-size: 11px;
-  }
+    font-size: 8px;
+    padding: 7px 5px;
+    border-radius: 5px;
+}
 
 }
 
@@ -502,7 +513,23 @@ button.btn.desktop-menu a {
 
 .gift-btn .btn-1 {
   padding: 5px;
+  background-color: #fff;
 }
+
+.btn-1 .btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  color: white;
+ 
+}
+
+.btn-1 .btn:active {
+  background-color: #004085;
+  transform: scale(0.98);
+  color: #fff;
+
+}
+
 
 .gift-btn .btn-1,
 .btn-2 {
@@ -512,16 +539,18 @@ button.btn.desktop-menu a {
 
 .btn-2 .btn {
   background-color: white;
-  color: #000000;
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 18px;
   font-weight: bold;
   padding: 10px 20px;
+  color: #000;
 }
 
 .gift-btn .white-btn .btn-2 {
   padding: 5px;
 }
+
+
 
 @media (max-width: 1200px) {
   .gift-section .container {
@@ -631,6 +660,21 @@ button.btn.desktop-menu a {
   padding: 150px 0;
 }
 
+.blur-background {
+  position: absolute;
+  top: 700px;
+  left: 244px;
+  width: 70%;
+  height: 100%;
+  background-image: url('/Img/blur-image.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  pointer-events: none;
+  filter: blur(80px);
+}
+
 .front-card {
   max-width: 370px;
   border-radius: 32px;
@@ -737,6 +781,20 @@ button.btn.desktop-menu a {
   border-radius: 10px;
 }
 
+.btn-9 .btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  color: white;
+ 
+}
+
+.btn-9 .btn:active {
+  background-color: #004085;
+  transform: scale(0.98);
+  color: #fff;
+
+}
+
 .btn-10 .btn {
   background-color: #fff;
   border: 1px solid #007AFF;
@@ -747,6 +805,11 @@ button.btn.desktop-menu a {
 }
 
 @media screen and (max-width: 768px) {
+
+  .blur-background {
+    display: none;
+  }
+  
   .background-section {
     padding: 100px 20px;
     background-size: cover;
@@ -847,7 +910,7 @@ button.btn.desktop-menu a {
   overflow-x: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
-  padding: 55px 0 197px 0;
+  padding: 55px 0 0px 0;
 }
 
 
@@ -882,13 +945,13 @@ button.btn.desktop-menu a {
 
 @media (max-width: 768px) {
   .slider-container {
-    padding: 100px 0 100px 0;
-  }
+    padding: 100px 0 0 0;
+}
 
 }
 
 .card-section {
-  padding: 0rem 12rem;
+  padding: 8rem 12rem 0;
   text-align: center;
 }
 
@@ -945,17 +1008,34 @@ button.btn.desktop-menu a {
   width: auto;
 }
 
+.btn-3 .btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  color: white;
+ 
+}
+
+.btn-3 .btn:active {
+  background-color: #004085;
+  transform: scale(0.98);
+  color: #fff;
+
+}
+
+
+
 @media (max-width: 768px) {
 
   .card-section .container {
     background-color: rgba(248, 247, 251, 1);
-    padding: 100px 0 37px 0;
+    padding: 65px 0 37px 0;
     border-radius: 0
 }
 
-  .card-section {
-    padding: 3rem 0;
-  }
+.card-section {
+  padding: 6.5rem 0 0;
+}
+
 
   .row-section {
     flex-direction: column;
@@ -983,18 +1063,17 @@ button.btn.desktop-menu a {
 
 @media (max-width: 480px) {
   .card-section {
-    padding: 0.5rem 0;
-  }
-
+    padding: 6.5rem 0 0;
+}
   .row-section {
     flex-direction: column;
     align-items: center;
 }
 
-  .card-section .container {
-    background-color: rgba(248, 247, 251, 1);
-    padding: 100px 0 37px 0;
-    border-radius: 0;
+.card-section .container {
+  background-color: rgba(248, 247, 251, 1);
+  padding: 50px 0 37px 0;
+  border-radius: 0;
 }
 
   .card-section h2 {
@@ -1028,8 +1107,7 @@ button.btn.desktop-menu a {
 
 .Back-section {
   text-align: center;
-  padding: px 0;
-  padding: 100px 0;
+  padding: 100px 0 50px;
 }
 
 .Back-section h6 {
@@ -1116,7 +1194,7 @@ button.btn.desktop-menu a {
   }
 
   .Back-section h6 {
-    font-size: 12px;
+    font-size: 11px;
     margin: 0 0 11px;
     font-weight: 900;
     letter-spacing: 2px;
@@ -1125,10 +1203,9 @@ button.btn.desktop-menu a {
 }
 
 .folder-section {
-  padding: 0 0 100px 0;
+  padding: 0 0 0 0;
   position: relative;
 }
-
 .folder-card {
   margin: 0 0 18px 0;
   flex: 0 0 auto;
@@ -1136,7 +1213,7 @@ button.btn.desktop-menu a {
 }
 
 .folder-card img:first-child {
-  margin-right: 12px;
+  margin-right: 18px;
 }
 
 .folder-section::before,
@@ -1234,21 +1311,35 @@ button.btn.desktop-menu a {
 .folder-text-banner-2:hover {
   cursor: pointer;
   background-color: #004085;
+ 
 }
 
 .folder-text-banner-2.active {
   background-color: #002b5c;
   color: white;
+ 
 }
+
+
+
 
 @media (max-width: 768px) {
 
-  .folder-section {
-    overflow-x: auto;
-    padding: 40px 0 100px 0;
-    white-space: nowrap;
-  }
+  .folder-card.auto-scroll .scroll-wrapper {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 80s linear infinite;
+}
 
+.folder-card.auto-scroll.right-scroll .scroll-wrapper {
+  animation: scroll-right 80s linear infinite;
+}
+
+.folder-section {
+  overflow-x: auto;
+  padding: 40px 0 0 0;
+  white-space: nowrap;
+}
 
   .folder-card {
     flex-direction: column;
@@ -1262,13 +1353,9 @@ button.btn.desktop-menu a {
     height: auto;
     display: block;
     border-radius: 16px 16px 0 0;
+    margin-right: 24px;
   }
 
-  .folder-card img:first-child {
-    margin-right: 12px;
-}
-
- 
   .folder-section::before,
   .folder-section::after {
     display: none;
@@ -1288,7 +1375,7 @@ button.btn.desktop-menu a {
 
   .folder-text-banner-2 {
     position: absolute;
-    top: 43%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #789AF7;
@@ -1315,6 +1402,11 @@ button.btn.desktop-menu a {
 .loop-section {
   justify-content: center;
   text-align: center;
+  padding: 35px 0 0 0;
+}
+
+.loop-section .container {
+  padding-top: 80px;
 }
 
 .loop-section h6 {
@@ -1401,6 +1493,12 @@ button.btn.desktop-menu a {
 
 
 @media (max-width: 768px) {
+
+  
+  .loop-section .container {
+    padding-top: 65px;
+}
+
   .loop-card .card-img-top {
     height: 250px;
   }
@@ -1533,10 +1631,9 @@ button.btn.desktop-menu a {
 
 
 @media (max-width: 768px) {
-
   .hear-section {
-    padding: 130px 0 0;
-  }
+    padding: 100px 0 0;
+}
 
   .hear-section .container {
     padding: 0;
@@ -1544,7 +1641,7 @@ button.btn.desktop-menu a {
 
   .hear-main {
     flex-direction: column;
-    padding: 77px 0 150px;
+    padding: 50px 0 150px;
     display: flex;
     border-radius: 0px;
     background: radial-gradient(circle at bottom left,
@@ -1632,14 +1729,14 @@ button.btn.desktop-menu a {
 .carousel-dots {
   display: flex;
   justify-content: center;
-  margin: 0; /* Remove the top margin */
-  position: absolute; /* Make it absolute positioned */
-  top: 400px; /* Position at the bottom */
+  margin: 0; 
+  position: absolute; 
+  top: 400px; 
   left: 0;
   right: 0;
   z-index: 10;
-  padding-bottom: 15px; /* Add some padding at the bottom */
-}
+  padding-bottom: 15px;
+ }
 
 .dot {
   height: 10px;
@@ -1655,8 +1752,6 @@ button.btn.desktop-menu a {
   .dot.active {
     background-color: #050508;
   }
-  
-
 
 }
 
@@ -1667,7 +1762,7 @@ button.btn.desktop-menu a {
   margin: auto;
   background: url('../Img/card-bg-img.png') center center no-repeat;
   background-size: contain;
-  padding: 151px 0;
+  padding: 50px 0;
 }
 
 .cele-section .container {
@@ -1681,6 +1776,21 @@ button.btn.desktop-menu a {
   width: auto;
   display: inline-block;
 }
+
+.btn-6 .btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  color: white;
+ 
+}
+
+.btn-6 .btn:active {
+  background-color: #004085;
+  transform: scale(0.98);
+  color: #fff;
+
+}
+
 
 .cele-section h6 {
   color: #635BFF;
@@ -1803,7 +1913,7 @@ button.btn.desktop-menu a {
 }
 
 .forward-section {
-  padding: 200px 0;
+  padding: 150px 0 20px;
 }
 
 .forward.left {
@@ -1852,8 +1962,8 @@ button.btn.desktop-menu a {
 
 @media (max-width: 768px) {
   .forward-section {
-    padding: 100px 0 100px 0;
-  }
+    padding: 80px 0 0 0;
+}
 
   .forward-main {
     flex-direction: column;
@@ -1931,11 +2041,11 @@ button.btn.desktop-menu a {
 
 .idea-section {
   text-align: center;
-  padding: 0 0 30px 0;
+  padding: 120px 0 30px 0;
 }
 
 .idea-main {
-  padding: 143px 117px 182px 117px;
+  padding: 100px 105px 100px 105px;
   border-radius: 32px;
   background-color: rgb(248 248 249 / 94%);
 }
@@ -2032,6 +2142,8 @@ button.btn.desktop-menu a {
   display: inline-block;
 }
 
+
+
 .idea-btn {
   padding: 71px 0 0 0;
 }
@@ -2042,6 +2154,21 @@ button.btn.desktop-menu a {
   line-height: 150%;
   font-weight: bold;
 }
+
+.btn-7 .btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  color: white;
+ 
+}
+
+.btn-7 .btn:active {
+  background-color: #004085;
+  transform: scale(0.98);
+  color: #fff;
+
+}
+
 
 
 @media (max-width: 768px) {
@@ -2065,10 +2192,10 @@ button.btn.desktop-menu a {
   }
 
   .idea-main {
-    padding: 71px 0 61px 0;
+    padding: 50px 0 61px 0;
     border-radius: 0%;
     background-color: rgb(248 248 249 / 94%);
-  }
+}
 
 
   .idea-grid-desktop {
@@ -2079,6 +2206,12 @@ button.btn.desktop-menu a {
     padding: 46px 16px 70px;
     background: none;
     margin: 0;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;    
+  }
+
+  .idea-grid-desktop::-webkit-scrollbar {
+    display: none;
   }
 
   .idea-grid-desktop .idea-card {
@@ -2103,8 +2236,8 @@ button.btn.desktop-menu a {
   }
 
   .idea-section {
-    padding: 0;
-  }
+    padding: 100px 0 0 0;
+}
 
   .btn-7 {
     display: inline-block;
@@ -2123,7 +2256,7 @@ button.btn.desktop-menu a {
 }
 
 .joy-section {
-  padding: 90px 0 200px 0;
+  padding: 90px 0 130px 0;
 }
 
 .joy-main {
@@ -2143,6 +2276,20 @@ button.btn.desktop-menu a {
   cursor: pointer;
   width: 100%;
   max-width: 300px;
+}
+
+.btn-8 .btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  color: white;
+ 
+}
+
+.btn-8 .btn:active {
+  background-color: #004085;
+  transform: scale(0.98);
+  color: #fff;
+
 }
 
 
@@ -2170,8 +2317,8 @@ button.btn.desktop-menu a {
 
 @media screen and (max-width: 768px) {
   .joy-section {
-    padding: 70px 16px 133px 16px;
-  }
+    padding: 70px 16px 90px 16px;
+}
 
   .joy-section .container {
     max-width: 100%;
@@ -2254,10 +2401,10 @@ button.btn.desktop-menu a {
 
 p.copyright {
   font-size: 16px;
-  color: #001D3D;
+  color: #a0a5abe8;
   line-height: 150%;
   margin: 0;
-  padding: 2;
+  padding: 2px;
 }
 
 .footer-btn a {
