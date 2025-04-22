@@ -668,9 +668,9 @@ button.btn.desktop-menu a {
 .background-section .blur-background {
     position: absolute;
     top: 700px;
-    left: 25%;
-    width: 50%;
-    height: 400px;
+    left: 14%;
+    width: 75%;
+    height: 620px;
     background-image: url('../Img/blur-image.png');
     background-size: cover;
     background-repeat: no-repeat;
