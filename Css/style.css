@@ -562,7 +562,7 @@ button.btn.desktop-menu a {
 @media (max-width: 992px) {
 
   .gift-section {
-    padding: 40px 0;
+    padding: 40px 0 100px 0;
   }
 
   .features {
@@ -592,7 +592,7 @@ button.btn.desktop-menu a {
 @media (max-width: 768px) {
 
   .gift-section {
-    padding: 40px 0;
+    padding: 40px 0 100px 0;
   }
 
 
@@ -811,8 +811,19 @@ button.btn.desktop-menu a {
 
 @media screen and (max-width: 768px) {
 
-  .blur-background {
-    display: none;
+  .blur-background {    
+    position: absolute;
+    top: 821px;
+    left: 9%;
+    width: 100%;
+    height: 656px;
+    background-image: url('../Img/blur-responsive.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    pointer-events: none;
+    filter: blur(90px);
   }
 
   .background-section {
