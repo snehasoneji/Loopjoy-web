@@ -815,7 +815,7 @@ button.btn.desktop-menu a {
   position: absolute;
   top: 821px;
   left: 9%;
-  width: 100%;
+  width: 90%;
   height: 656px;
   background-image: url('../Img/blur-responsive.png');
   background-size: cover;
@@ -879,7 +879,7 @@ button.btn.desktop-menu a {
     position: absolute;
     top: 821px;
     left: 9%;
-    width: 100%;
+    width: 90%;
     height: 656px;
     background-image: url('../Img/blur-responsive.png');
     background-size: cover;
