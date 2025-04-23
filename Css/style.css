@@ -1269,6 +1269,7 @@ button.btn.desktop-menu a {
   .card-section {
     padding: 6rem 0rem 0;
 }
+
   .row-section {
     flex-direction: column;
     align-items: center;
@@ -1329,12 +1330,12 @@ button.btn.desktop-menu a {
     padding: 7rem 3rem 0;
 }
 
-  .row-section {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    padding: 0 40px;
-  }
+.row-section {
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  gap: 0rem;
+  padding: 0 40px;
+}
 
   .card-section .card {
     margin-right: 0;
@@ -3112,4 +3113,3 @@ p.copyright {
   }
 
 }
-
