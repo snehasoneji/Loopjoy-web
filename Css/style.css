@@ -714,6 +714,13 @@ button.btn.desktop-menu a {
     max-width: 900px;
   }
 
+
+}
+
+@media (min-width: 1024px) {
+  .gift-section {
+    padding: 74px 0 81px 0;
+}
 }
 
 
@@ -994,7 +1001,35 @@ button.btn.desktop-menu a {
   .btn-10 {
     text-align: center;
   }
+  
+  
 }
+
+@media (min-width: 1024px) {
+
+  .background-section .blur-background {
+    position: absolute;
+    top: 587px;
+    left: 13%;
+    width: 77%;
+    height: 667px;
+    background-image: url('../Img/blur-responsive.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    pointer-events: none;
+    filter: blur(40px);
+}
+
+.background-section {
+  background: url('../Img/background-card-img.png') center center no-repeat;
+  padding: 114px 0;
+}
+  
+}
+
+
 
 .slider-container {
   overflow-x: auto;
@@ -1218,7 +1253,7 @@ button.btn.desktop-menu a {
 
 @media (max-width: 480px) {
   .card-section {
-    padding: 6.5rem 0 0;
+    padding: 6rem 0rem 0;
 }
   .row-section {
     flex-direction: column;
@@ -1274,6 +1309,45 @@ button.btn.desktop-menu a {
 
 }
 
+@media (min-width: 1024px) {
+
+.card-section {
+    padding: 7rem 3rem 0;
+}
+
+  .row-section {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 40px;
+  }
+
+  .card-section .card {
+    margin-right: 0 !important;
+    width: 16rem !important;
+}
+
+  .card-section h4 {
+    font-size: 36px;
+    padding: 0 20px;
+  }
+
+  .card-section .lead p {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .card-btn {
+    margin-top: 30px;
+  }
+
+  .card-btn .btn-3 .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 16px;
+  }
+}
+
+
 
 .Back-section {
   text-align: center;
@@ -1312,7 +1386,13 @@ button.btn.desktop-menu a {
 
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
+  .Back-section {
+    text-align: center;
+    padding: 100px 0 0px;
+}
+
+
   .Back-section h2 {
     font-size: 42px;
   }
@@ -1569,6 +1649,27 @@ button.btn.desktop-menu a {
  
 }
 
+@media (min-width: 1024px) {
+  .folder-text-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #789AF7;
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 18px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    border: none;
+    font-size: 14px;
+}
+
+}
+
 .loop-section {
   justify-content: center;
   text-align: center;
@@ -1712,6 +1813,28 @@ button.btn.desktop-menu a {
   }
 }
 
+@media (min-width: 1024px) {
+  .loop-section h4 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+
+  .col-md-5 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.col-md-3 {
+  flex: 0 0 auto;
+  width: 33%;
+}
+
+.loop-section .container {
+  padding-top: 25px;
+}
+
+}
 
 
 .hear-section {
@@ -1925,6 +2048,50 @@ button.btn.desktop-menu a {
 
 }
 
+@media (min-width: 1024px) {
+
+  .hear-section {
+    padding: 110px 0 90px 0;
+}
+
+.hear-main {
+  display: flex;
+  border-radius: 32px;
+  background: radial-gradient(circle at bottom left,
+  #ffffff 0%,
+  #f3f1fb 40%,
+  #f1fcf6 100%);
+  align-items: center;
+}
+
+.hear-right {
+  margin-right: 65px;
+}
+
+
+.scroll-box img {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.hear-left {
+  max-width: 330px;
+  margin: auto;
+  margin: 0 70px;
+}
+
+.hear-left h6 {
+  color: #635BFF;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 150%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  letter-spacing: 2px;
+  margin: 40px 0 7px 0;
+}
+
+}
 
 .cele-section {
   position: relative;
@@ -2080,7 +2247,54 @@ button.btn.desktop-menu a {
     letter-spacing: 2px;
   }
 
+
 }
+
+@media (min-width: 1024px){
+  .cele-section {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    background: url('../Img/card-bg-img.png') center center no-repeat;
+    background-size: contain;
+    padding: 0px 0;
+  }
+
+  .cele-section h4 {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 120%;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #000;
+}
+
+.cele-section .container {
+  max-width: 575px;
+  margin: auto;
+  padding: 210px 30px 194px 30px;
+}
+
+.cele-section h6 {
+  color: #635BFF;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 150%;
+  margin-bottom: 21px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  letter-spacing: 2px;
+  margin-top: 5px;
+}
+
+.btn-6 .btn {
+  padding: 16px 33px;
+  width: auto;
+  display: inline-block;
+  font-size: 14px;
+}
+
+}
+
+
 
 .forward-section {
   padding: 150px 0 20px;
@@ -2207,6 +2421,50 @@ button.btn.desktop-menu a {
     margin-top: 41px;
   }
 
+}
+
+@media (min-width: 1024px) {
+
+  .forward-section {
+    padding: 110px 0 20px;
+}
+
+.forward-main {
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: center;
+  padding: 0 60px;
+}
+
+.forward-section h4 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 120%;
+  color: #001D3D;
+  margin: 0 0 21px 0;
+}
+
+.forward-right img {
+  width: 95%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+
+}
+
+.forward.left {
+  max-width: 461px;
+  margin-top: 60px;
+  padding: 10px;
+  margin-right: 40px;
+}
+
+.forward-section .lead p {
+  color: #001D3D;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0 0 21px 0;
+}
 }
 
 .idea-section {
@@ -2474,6 +2732,53 @@ button.btn.desktop-menu a {
   }
 }
 
+@media (min-width: 1024px) {
+
+  .idea-section {
+    text-align: center;
+    padding: 70px 0 30px 0;
+}
+
+  .idea-main {
+    padding: 85px 75px 85px 75px;
+    border-radius: 32px;
+    background-color: rgb(248 248 249 / 94%);
+}
+
+  .idea-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.85);
+}
+
+.idea-section h4 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 120%;
+  color: #001D3D;
+  margin: 0 0 0px 0;
+}
+
+.idea-grid-desktop {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  position: relative;
+  z-index: 1;
+  margin: 75px 0 0 0;
+}
+
+.btn-7 .btn {
+  padding: 17px 66px;
+  font-size: 17px;
+  line-height: 150%;
+  font-weight: bold;
+}
+
+}
+
+
 .joy-section {
   padding: 90px 0 130px 0;
 }
@@ -2587,6 +2892,25 @@ button.btn.desktop-menu a {
     height: auto;
   }
 }
+
+@media (min-width: 1024px) {
+  .joy-section {
+    padding: 50px 0 100px 0;
+}
+
+.joy-section h4 {
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 120%;
+  color: #001D3D;
+}
+
+.joy-img img {
+  max-width: 85%;
+}
+}
+
+
 
 
 .footer-section {
