@@ -1029,6 +1029,20 @@ button.btn.desktop-menu a {
   
 }
 
+@media (min-width: 1920px) {
+  
+
+  .background-section .blur-background {
+    top: 728px;
+    left: 28%;
+    width: 44%;
+    height: 620px;
+    filter: blur(100px);
+}
+
+}
+
+
 
 
 .slider-container {
@@ -2777,6 +2791,12 @@ button.btn.desktop-menu a {
   font-weight: bold;
 }
 
+.idea-card:hover .overlay {
+  background: white;
+  padding-bottom: 25px;
+  border-radius: 18px;
+}
+
 }
 
 
@@ -3092,3 +3112,4 @@ p.copyright {
   }
 
 }
+
