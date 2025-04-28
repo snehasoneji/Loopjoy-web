@@ -131,3 +131,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 2000);
 });
 
+
+// stepper
+
+let currentTopStep = 1;
+const totalTopSteps = 4;
+const topStepperBar = document.getElementById('topStepperBar');
+const nextBtnStepper = document.getElementById('next-btn');
+
+nextBtnStepper.addEventListener('click', function () {
+  if (currentTopStep < totalTopSteps) {
+    currentTopStep++;
+    updateTopStepper();
+  }
+});
+
+function updateTopStepper() {
+  const stepPercent = (currentTopStep / totalTopSteps) * 100;
+  topStepperBar.style.width = stepPercent + '%';
+}
