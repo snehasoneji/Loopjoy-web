@@ -3507,6 +3507,50 @@ p.copyright {
   border: 1px solid rgba(120, 154, 247, 0.3);
 }
 
+@media screen and (min-width: 1920px) {
+  .title-section {
+    padding: 60px 0 74px;
+}
+  
+  .title-main {
+    max-width: 1800px;
+    margin: 0 auto 50px;
+  }
+  
+  .title-left {
+    width: 500px;
+  }
+  
+  .title-left h5 {
+    font-size: 15px;
+  }
+  
+  .title-left h3 {
+    font-size: 42px;
+  }
+  
+  .title-card-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 1800px;
+  }
+  
+  .occasion-card {
+    height: 200px;
+    width: 180px;
+  }
+  
+  .occasion-card img {
+    height: 84px;
+    width: 86px;
+  }
+  
+  .occasion-card a {
+    font-size: 14px;
+  }
+}
+
+
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .title-section {
