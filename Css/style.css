@@ -1045,6 +1045,7 @@ button.btn.desktop-menu a {
 
 
 
+
 .slider-container {
   overflow-x: auto;
   white-space: nowrap;
@@ -3210,7 +3211,7 @@ p.copyright {
 }
 
 .top-stepper-bar {
-  height: 8px;
+  height: 9px;
   width: 25%;
   background-color: #7B61FF;
   transition: width 0.4s ease;
@@ -3281,9 +3282,17 @@ p.copyright {
 
 
 @media (min-width: 1920px) {
+
+  .top-stepper-bar {
+    height: 10px;
+    width: 25%;
+    background-color: #7B61FF;
+    transition: width 0.4s ease;
+}
+
   .top-stepper-container {
     top: 93px;
-    height: 9px;
+    height: 10px;
 }
 }
 
