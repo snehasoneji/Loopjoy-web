@@ -3116,12 +3116,12 @@ p.copyright {
 
 /* index2.html page-2 css */
 
-.header-section-2{
-  padding: 24px 0;  
+.header-section-2 {
+  padding: 24px 0 35px;
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: #fff; 
+  background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -3201,12 +3201,12 @@ p.copyright {
 
 .top-stepper-container {
   position: fixed;
-  top: 84px;       
+  top: 82px;
   left: 0;
   width: 100%;
   height: 8px;
   background-color: rgba(127, 71, 254, 0.1);
-  z-index: 1000; 
+  z-index: 1000;
 }
 
 .top-stepper-bar {
@@ -3216,87 +3216,80 @@ p.copyright {
   transition: width 0.4s ease;
 }
 
+@media (min-width: 768px) {
+  .top-stepper-container {
+    top: 90px;
+    height: 8px;
+  }
+}
+
+
+
+@media (min-width: 1024px) {
+  .top-stepper-container {
+    top: 94px;
+    height: 8px;
+  }
+}
 
 @media (max-width: 480px) {
   .top-stepper-container {
-    position: fixed;
-    top: 56px;
-    left: 0;
-    width: 100%;
+    top: 70px;
     height: 8px;
-    background-color: rgba(127, 71, 254, 0.1);
-    z-index: 1000;
+}
 }
 
-   .top-stepper-bar {
-    height: 8px;
-}
-} 
 
 @media (min-width: 481px) and (max-width: 767px) {
   .top-stepper-container {
-    position: fixed;
-    top: 65px;
-    height: 7px;
-    background-color: rgba(127, 71, 254, 0.1);
+    top: 76px;
+    height: 8px;
 }
-
 }
 
 
 @media (min-width: 768px) and (max-width: 991px) {
   .top-stepper-container {
-    position: fixed;
-    top: 64px;
+    top: 76px;
     height: 8px;
-    background-color: rgba(127, 71, 254, 0.1);
 }
 }
+
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .top-stepper-container {
-    position: fixed;
-    top: 76px;
+    top: 82px;
     height: 8px;
-    background-color: rgba(127, 71, 254, 0.1);
 }
 }
 
-@media (min-width: 1200px) and (max-width: 1919px) {
+
+@media (min-width: 1200px) and (max-width: 1439px) {
   .top-stepper-container {
-    position: fixed;
-    top: 84px;
+    top: 94px;
     height: 8px;
-    background-color: rgba(127, 71, 254, 0.1);
+  }
+}
+
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .top-stepper-container {
+    top: 94px;
+    height: 8px;
 }
 }
 
 
 @media (min-width: 1920px) {
-
-  .top-stepper-bar {
-    height: 10px;
-    width: 25%;
-    background-color: #7B61FF;
-    transition: width 0.4s ease;
-}
-.top-stepper-container {
-  position: fixed;
-  top: 82px;
-  height: 10px;
-  background-color: rgba(127, 71, 254, 0.1);
+  .top-stepper-container {
+    top: 93px;
+    height: 9px;
 }
 }
-
-
-
-
-
-
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .header-section-2 {
-    padding: 20px 0;
+    padding: 20px 0 26px;
 }
 
   .header-main-2 {
@@ -3321,8 +3314,8 @@ p.copyright {
 
 @media (max-width: 992px) {
   .header-section-2 {
-    padding: 20px 16px;
-  }
+    padding: 20px 0 30px;
+}
 
   .header-main-2 {
     gap: 16px;
@@ -3344,8 +3337,8 @@ p.copyright {
 
 @media (max-width: 768px) {
   .header-section-2 {
-    padding: 16px 12px;
-  }
+    padding: 22px 0 22px;
+}
 
   .header-main-2 {
     gap: 12px;
@@ -3407,8 +3400,8 @@ p.copyright {
 }
 
   
- .header-section-2 {
-    padding: 12px 0px;
+.header-section-2 {
+  padding: 16px 0px 22px;
 }
 
   .heart-partner button {
