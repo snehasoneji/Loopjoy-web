@@ -3284,7 +3284,7 @@ p.copyright {
 @media (min-width: 1920px) {
 
   .top-stepper-bar {
-    height: 10px;
+    height: 11px;
     width: 25%;
     background-color: #7B61FF;
     transition: width 0.4s ease;
@@ -3292,7 +3292,7 @@ p.copyright {
 
   .top-stepper-container {
     top: 92px;
-    height: 10px;
+    height: 11px;
 }
 }
 
@@ -3509,7 +3509,7 @@ p.copyright {
 
 @media screen and (min-width: 1920px) {
   .title-section {
-    padding: 60px 0 74px;
+    padding: 60px 0 84px;
 }
   
   .title-main {
@@ -3520,25 +3520,31 @@ p.copyright {
   .title-left {
     width: 500px;
   }
+
+  .title-left img {
+    width: 200px;
+}
   
-  .title-left h5 {
-    font-size: 15px;
-  }
+.title-left h5 {
+  font-size: 20px;
+}
   
-  .title-left h3 {
-    font-size: 42px;
-  }
+.title-left h3 {
+  font-size: 50px;
+  width: 90%;
+}
   
-  .title-card-grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    max-width: 1800px;
-  }
+.title-card-grid {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  max-width: 1800px;
+}
   
-  .occasion-card {
-    height: 200px;
-    width: 180px;
-  }
+.occasion-card {
+  height: 200px;
+  width: 170px;
+  justify-content: center;
+}
   
   .occasion-card img {
     height: 84px;
@@ -3548,6 +3554,7 @@ p.copyright {
   .occasion-card a {
     font-size: 14px;
   }
+
 }
 
 
@@ -3734,6 +3741,10 @@ p.copyright {
 
   .occasion-card a {
     font-size: 10px;
+  }
+
+  .title-right {
+    margin: 0 0 100px;
   }
 }
 
@@ -4044,8 +4055,24 @@ p.copyright {
   margin: 9px 0 9px 0;
 }
 
-.title-right {
-  margin: 0 0 100px;
+
+}
+
+@media screen and (min-width: 1920px) {
+
+  .footer-section-2-center h5 {
+    font-size: 16px;
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    line-height: 150%;
+}
+
+.footer-section-2-center h6 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6c757d;
+  margin: 0;
+  line-height: 150%;
 }
 
 }
