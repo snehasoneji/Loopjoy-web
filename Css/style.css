@@ -4146,7 +4146,7 @@ p.copyright {
 }
 
 .small-card .card-text {
-  font-size: 10.5px;
+  font-size: 9.5px;
   line-height: 150%;
   margin: 0;
   color: #706f6f;
@@ -4258,6 +4258,13 @@ p.copyright {
 
 .small-card {
   margin: 0 0 13px;
+}
+
+.small-card .card-text {
+  font-size: 9.5px;
+  line-height: 150%;
+  margin: 0;
+  color: #706f6f;
 }
 
 
@@ -4407,3 +4414,4 @@ p.copyright {
 }
  
 }
+
