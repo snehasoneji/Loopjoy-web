@@ -134,19 +134,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // stepper
 
-let currentTopStep = 1;
-const totalTopSteps = 4;
-const topStepperBar = document.getElementById('topStepperBar');
-const nextBtnStepper = document.getElementById('next-btn');
 
-nextBtnStepper.addEventListener('click', function () {
-  if (currentTopStep < totalTopSteps) {
-    currentTopStep++;
-    updateTopStepper();
+const totalSteps = 4;
+let currentStep = 1;
+
+function nextStep() {
+  if (currentStep < totalSteps) {
+    currentStep++;
+    updateStepper();
+    updateStepContent();
   }
-});
-
-function updateTopStepper() {
-  const stepPercent = (currentTopStep / totalTopSteps) * 100;
-  topStepperBar.style.width = stepPercent + '%';
 }
+
+function updateStepper() {
+  const stepperBar = document.getElementById('topStepperBar');
+  const progressPercent = ((currentStep - 1) / (totalSteps - 1)) * 100;
+  stepperBar.style.width = progressPercent + '%';
+}
+
+function updateStepContent() {
+  const steps = document.querySelectorAll('.step');
+  steps.forEach((step, index) => {
+    step.style.display = index === (currentStep - 1) ? 'block' : 'none';
+  });
+}
+
+// Initialize first step display
+updateStepContent();
