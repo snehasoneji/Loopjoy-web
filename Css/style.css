@@ -4176,7 +4176,7 @@ p.copyright {
 @media screen and (min-width: 1920px) {
 
   .small-section {
-    padding: 50px 0 100px;
+    /* padding: 50px 0 100px; */
     background-color: #F5F5F5;
 }
 
