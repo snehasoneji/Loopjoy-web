@@ -4208,6 +4208,20 @@ p.copyright {
 .small-left img {
   width: 220px;
 }
+
+.custom-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+  padding: 250px 0 60px;
+  inset: 0;
+}
  
 
 }
@@ -5031,4 +5045,3 @@ textarea {
   }
 
 }
-
