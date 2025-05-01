@@ -222,7 +222,7 @@
       </div>
       <div class="footer-dupe-main">
         <div class="footer-section-2-center">
-          <h6>Step 1 of 4</h6>
+          <h6>Step 2 of 4</h6>
           <h5>Select occasion</h5>
         </div>
         <div class="footer-dupe-buttons">
@@ -319,6 +319,66 @@
       }
     });
   });
+  </script>
+
+
+<!-- smile-section js -->
+
+<!-- JavaScript for button functionality -->
+<script>
+    // Wait for DOM to be fully loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get all suggestion buttons
+      const suggestionButtons = document.querySelectorAll('.suggestion-btn');
+      const textArea = document.querySelector('textarea');
+      
+      // Add click event listeners to suggestion buttons
+      suggestionButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          // Get the button text without the emoji
+          const buttonText = this.textContent.replace(/[^\w\s]/gi, '').trim();
+          
+          // Set the textarea text based on which button was clicked
+          switch(buttonText) {
+            case 'Share what you admire':
+              textArea.value = "I really admire how you always...";
+              break;
+            case 'Recognize their effort':
+              textArea.value = "I noticed all the effort you put into...";
+              break;
+            case 'Make them smile':
+              textArea.value = "Just wanted to brighten your day by saying...";
+              break;
+            case 'Express gratitude for being there':
+              textArea.value = "I'm so grateful for the way you've been there for me when...";
+              break;
+            default:
+              break;
+          }
+          textArea.focus();
+        });
+      });
+      
+      // Show more button functionality
+      const showMoreBtn = document.querySelector('.show-more-btn');
+      showMoreBtn.addEventListener('click', function() {
+        alert('More suggestion options would appear here!');
+      });
+      
+      // Inspire me button functionality
+      const inspireBtn = document.querySelector('.inspire-btn');
+      inspireBtn.addEventListener('click', function() {
+        const inspirations = [
+          "Your kindness has made such a difference in my life.",
+          "The way you handled that situation showed incredible strength and wisdom.",
+          "I've always appreciated your unique perspective on things.",
+          "Your passion for what you do is truly inspiring.",
+          "Thank you for being someone I can always count on."
+        ];
+        textArea.value = inspirations[Math.floor(Math.random() * inspirations.length)];
+        textArea.focus();
+      });
+    });
   </script>
 
 
