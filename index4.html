@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">   
+    <title>Figma-File-1 page-4</title>
+</head>
+<body>
+
+<header class="header-section-2">
+    <div class="container">
+        <div class="header-main-2">
+            <div class="header-left">
+                <div class="logo">
+                    <h4><a href="#">Loop<span>Joy</span></a></h4>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="heart-partner">
+                    <button>
+                        <img src="Img/heart-partner-handshake 1.svg" alt="heart-partner">
+                        <a href="#">245 Acts of kindness shared</a>
+                    </button>
+                </div>
+                <div class="mobile-book-icon">
+                    <img src="Img/book.png" alt="Book Icon" id="bookIcon">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="top-stepper-container">
+    <div class="top-stepper-bar" id="topStepperBar"></div>
+</div>
+
+<div class="smile-section">
+    <div class="container">
+        <div class="smile-main">
+            <div class="smile-left">
+                <img src="Img/smile-img-1.png" alt="smile-image">
+                <h5>WRITE A MESSAGE (OPTIONAL)</h5>
+                <h3>Write a message that will bring a smile. </h3>
+                <p>Keep it personal and heartfelt.</p>
+            </div>  
+            <div class="smile-right">
+
+                <div class="message-container">
+                    <div class="suggestion-buttons">
+                      <button class="suggestion-btn"><span>✨</span> Share what you admire</button>
+                      <button class="suggestion-btn"><span>👍</span> Recognize their effort</button>
+                      <button class="suggestion-btn"><span>😊</span> Make them smile</button>
+                      <button class="suggestion-btn"><span>❤️</span> Express gratitude for being there</button>
+                      <button class="show-more-btn">Show more <span><img src="Img/bottom era.png" alt="bottom-era"></span></button>
+                    </div>
+                    
+                    <div class="message-input-area">
+                      <h4>Type your message here</h4>
+                      <div class="textarea-container">
+                        <textarea placeholder="Tell someone what you appreciate about their character or actions..."></textarea>
+                        <button class="inspire-btn"><span>💡</span> Inspire me</button>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>      
+        </div>
+    </div>
+</div>
+
+
+  
+
+
+<footer class="footer-section-2">
+    <div class="container">
+      <div class="footer-section-2-main">
+        <div class="footer-section-2-left">
+          <button class="btn" onclick="window.location.href='index3.html'">Back</button>
+        </div>
+        <div class="footer-section-2-center">
+          <h6>Step 1 of 4</h6>
+          <h5>Select occasion</h5>
+        </div>
+        <div class="footer-section-2-right">
+            <!-- <button class="btn" onclick="window.location.href='index4.html'">Next</button> -->
+            <button onclick="goToNextPage()">Next</button>
+        </div>
+      </div>
+      <div class="footer-dupe-main">
+        <div class="footer-section-2-center">
+          <h6>Step 3 of 4</h6>
+          <h5>Select occasion</h5>
+        </div>
+        <div class="footer-dupe-buttons">
+            <div class="footer-section-2-left">
+              <button class="btn" onclick="window.location.href='index3.html'">Back</button>
+            </div>   
+          <div class="footer-section-2-right">
+            <!-- <button class="btn" onclick="window.location.href='index4.html'">Next</button> -->
+            <button onclick="goToNextPage()">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <script>
+    const currentStep = 3;
+    localStorage.setItem('step', currentStep);
+    updateStepper(currentStep);
+  
+    function goToNextPage() {
+      localStorage.setItem('step', 4);
+      window.location.href = 'index5.html';
+    }
+  
+    function updateStepper(step) {
+      const percent = (step / 4) * 100;
+      document.getElementById('topStepperBar').style.width = percent + '%';
+    }
+  </script>
+
+
+
+
+
+
+ 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+<script src="js/custom.js"></script>
+    
+</body>
+</html>
