@@ -3433,7 +3433,7 @@ p.copyright {
 }
 
 .title-section {
-  padding: 50px 0 120px;
+  padding: 50px 0 100px 0;
   background-color: #F5F5F5;
 }
 
@@ -3565,7 +3565,7 @@ p.copyright {
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .title-section {
-    padding: 50px 0 120px;
+    padding: 50px 0 125px 0;
     background-color: #F5F5F5;
 }
 
@@ -3612,7 +3612,7 @@ p.copyright {
 
 @media (max-width: 992px) {
   .title-section {
-    padding: 0 0 120px;
+    padding: 50px 0 100px 0;
     background-color: #F5F5F5;
 }
   .title-main {
@@ -4173,6 +4173,27 @@ p.copyright {
 }
 
 
+@media screen and (max-width: 1920px){
+
+  .custom-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    padding: 250px 0 60px;
+    inset: 0;
+  }
+
+
+
+}
+
+
 @media screen and (min-width: 1920px) {
 
   .small-section {
@@ -4228,7 +4249,7 @@ p.copyright {
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .small-section {
-    padding: 50px 0 100px;
+    padding:  0;
     background-color: #F5F5F5;
 }
 .small-section .container {
@@ -4601,8 +4622,6 @@ p#modalText {
   font-size: 15px;
 
 }
-
-
 
 .send-btn {
   background-color: #789AF7;
@@ -5048,8 +5067,3 @@ textarea {
 
 
 /* title-section scrollbar */
-
-
-
-
-
