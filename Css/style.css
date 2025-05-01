@@ -3433,7 +3433,7 @@ p.copyright {
 }
 
 .title-section {
-  padding: 50px 0 120px;
+  padding: 0;
   background-color: #F5F5F5;
 }
 
@@ -4968,7 +4968,7 @@ textarea {
 /* small-section sccrollbar */
 
 /* Styles for desktop - will enable vertical scrolling only on the card grid */
-@media screen and (min-width: 992px) { /* Standard desktop breakpoint */
+@media (min-width: 992px) and (max-width: 1919PX ) { /* Standard desktop breakpoint */
   .small-right {
     height: 100%; /* Ensure parent container takes full height */
     position: relative;
@@ -5016,7 +5016,7 @@ textarea {
 @media (min-width: 425PX) and (max-width: 767PX ) {
   .small-card-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     overflow: visible;
     max-height: none;
@@ -5037,6 +5037,88 @@ textarea {
 
 @media (min-width: 320PX) and (max-width: 374PX ){
   .small-card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    overflow: visible;
+    max-height: none;
+  }
+
+}
+
+
+/* title-section scrollbar */
+
+/* Styles for desktop - will enable vertical scrolling only on the card grid */
+@media screen and (min-width: 992px) { /* Standard desktop breakpoint */
+  .title-right {
+    height: 100%; /* Ensure parent container takes full height */
+    position: relative;
+  }
+  
+  .title-card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    max-height: 80vh; 
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    padding: 50px 10px 100px 0;
+
+  }
+  
+  /* Make scrollbar invisible while maintaining functionality */
+  .title-card-grid {
+    -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none;     /* Hide scrollbar for Firefox */
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .title-card-grid::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Ensure cards maintain proper appearance */
+  .title-card {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* For mobile and tablet screens, revert to normal flow without fixed height/scrolling */
+@media screen and (max-width: 991px) {
+  .title-card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    overflow: visible;
+    max-height: none;
+  }
+}
+
+@media (min-width: 425PX) and (max-width: 767PX ) {
+  .title-card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    overflow: visible;
+    max-height: none;
+  }
+}
+
+@media (min-width: 375PX) and (max-width: 424PX ){
+  .title-card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    overflow: visible;
+    max-height: none;
+  }
+
+}
+
+
+@media (min-width: 320PX) and (max-width: 374PX ){
+  .title-card-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
